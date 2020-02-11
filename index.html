@@ -33,6 +33,7 @@
         <p>Reload for another joke!</p>
 
         <div class="content" id="chuck-norris"></div>
+        <button id="btnChangeJoke">Click me</button>
       </div>
     </section>
 
@@ -54,6 +55,8 @@
             document.querySelector("#chuck-norris").innerHTML = htmlContents;
           });
       }
+      const btnChangeJoke = document.querySelector("#btnChangeJoke");
+      btnChangeJoke.addEventListener("click", fetchAdditionalHTML);
       fetchAdditionalHTML();
     </script>
   </body>
